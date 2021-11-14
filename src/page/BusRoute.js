@@ -18,7 +18,7 @@ export default function BusRoute() {
                     <Col span={3} className="bg-white"></Col>
                     <Col span={6} className="bg-white" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
                             <Divider orientation="left">搜尋公車路線</Divider>
-                            <Search placeholder="輸入公車路線/站牌" value="935" id="route_input" style={{ width: "100%",fontSize: 16,color: '#1890ff'}}/>
+                            <Search placeholder="輸入公車路線/站牌" value="932" id="route_input" style={{ width: "100%",fontSize: 16,color: '#1890ff'}}/>
                             <div class="font-normal" style={{marginTop:'60px'}}>FAD-061</div>
                             <div  style={{marginTop:'20px'}}>
                                 <img src="./img/bus.svg"></img>

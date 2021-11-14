@@ -143,9 +143,11 @@ code {
 
 
 /* input */
+.loginInputs{
+    width: 100%;
+}
 
 .loginInputs .ant-input {
-    width: 360px !important;
     height: 60px !important;
     border: 1px solid var(--deep-gray) !important;
     margin-bottom: 1rem !important;
