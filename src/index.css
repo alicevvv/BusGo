@@ -10,7 +10,7 @@
     color: var(--deep-gray) !important;
 }
 
-nav a {
+/* nav a {
     color: var(--deep-gray) !important;
 }
 
@@ -24,7 +24,7 @@ nav a h1 {
     border-radius: 30px !important;
     height: 40px !important;
     line-height: 20px !important;
-}
+} */
 
 body {
     margin: 0;
@@ -36,7 +36,7 @@ body {
 
 main,
 .contain-minheight {
-    min-height: calc(100vh - 222px) !important;
+    min-height: calc(100vh - 162px) !important;
 }
 
 .ant-layout-footer {
@@ -46,7 +46,7 @@ main,
 .myFooter {
     background-color: var(--deep-gray);
     width: 100vw;
-    height: 158px;
+    height: 98px;
 }
 
 code {

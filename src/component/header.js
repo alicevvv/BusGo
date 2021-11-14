@@ -14,7 +14,7 @@ export default function AppHeader(){
         <>
         <Nav>
             <NavLink to="/">
-             <h1 style={{color:' #ffffff'}}>Bus Go! 公車動態應用系統</h1>
+             <h1 style={{color:' #343E4B'}}>Bus Go! 公車動態應用系統</h1>
              </NavLink>
              <Bars />
              <NavMenu>

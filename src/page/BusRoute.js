@@ -1,15 +1,18 @@
 import {Layout, Row, Col,Input,Space, Typography, List, Avatar, Divider,Button,Radio,Table} from 'antd';
+import { createContext,useState } from "react";
 import AppHeader from '../component/header';
 import AppFooter from '../component/footer';
 import BusTime from '../component/BusTime';
 import BusStation from '../component/BusStation';
 import BusLike from '../component/BusLike';
 import BusStatus from '../component/BusStatus';
+import changeLikeStation from '../actions'
 const {Header, Content, Footer} = Layout;
 const { Search } = Input;
 const { Title } = Typography;
 
 export default function BusRoute() {
+    const [likeCount] = useState(0);
     return (
         <Layout>
             <Header>
@@ -35,7 +38,7 @@ export default function BusRoute() {
                     <Col span={8} className="bg-light" style={{display:'flex',flexDirection:'column'}}>
                         <div class="font-normal" style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:'60px'}} >
                             <span className="font-normal" style={{fontSize:'24px'}}>932路線
-                                <div style={{fontSize:'16px'}}>已收藏 3 個站牌</div>
+                                <div style={{fontSize:'16px'}}>已收藏 {likeCount} 個站牌</div>
                             </span>
                             <Radio.Group name="directionRadioGroup" defaultValue={0}>
                                 <Space direction="vertical">
@@ -44,7 +47,7 @@ export default function BusRoute() {
                                 </Space>
                             </Radio.Group>
                         </div>
-                        <div style={{marginTop:'40px',display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'baseline',maxHeight:'50vh',overflow:'scroll'}}>
+                        <div style={{marginTop:'40px',display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'start',maxHeight:'50vh',overflowY:'scroll'}}>
                             <BusTime/>
                             <BusStation/>
                             <BusLike/>
