@@ -119,6 +119,75 @@ code {
     border-left: none !important;
 }
 
+.ant-list-items li:nth-child(even) {
+    background-color: rgba(52, 62, 75, 0.2)!important;
+}
+
+
+/* input */
+.loginInputs{
+    width: 100%;
+}
+
+.loginInputs .ant-input {
+    height: 60px !important;
+    border: 1px solid var(--deep-gray) !important;
+    margin-bottom: 1rem !important;
+}
+
+.loginInputs .ant-input:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+
+/* button */
+
+.ant-btn-text:hover,
+.ant-btn-text:focus {
+    background-color: unset !important;
+}
+
+.hover-border:hover {
+    border-color: var(--yellow) !important;
+}
+
+.btn-main {
+    background-color: var(--deep-gray) !important;
+    color: var(--light-gray) !important;
+    padding: 0 !important;
+}
+
+
+/* radio */
+
+.ant-radio-inner {
+    border-color: var(--deep-gray) !important;
+}
+
+.ant-radio-inner::after{
+    background-color: var(--yellow) !important;
+}
+
+/* checkbox */
+.ant-checkbox-checked .ant-checkbox-inner{
+    background-color: var(--deep-gray) !important;
+    border-color:var(--deep-gray) !important;
+}
+
+/* badge */
+.badge{
+    color:var(--white);
+    background-color: var(--deep-gray);
+    padding:9px 16px;
+    margin-bottom: 16px;
+    border-radius: 30px;
+}
+
+.stationName{
+    padding:9px 16px;
+    margin-bottom: 16px;
+}
 /* Button */
 
 .add{
