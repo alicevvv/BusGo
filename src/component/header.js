@@ -30,10 +30,11 @@ export default function AppHeader(){
                  <NavLink to="/Sing Up" activeStyle>
                      乘客服務
                  </NavLink>
-             </NavMenu>
-             <NavBtn>
+                 <NavBtn>
                <NavBtnLink to="/singin"> 會員登入</NavBtnLink>  
              </NavBtn>
+             </NavMenu>
+           
         </Nav>
         </>
     );
