@@ -7,16 +7,19 @@ import Home from './page/Home';
 import Login from './page/Login';
 import BusRoute from './page/BusRoute';
 // import Announce from './page/Announce'
+import { StoreProvider } from "./store/index.js";
 
 function App() {
   return (
-    <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/login" component={Login}/>
-          <Route path="/busRoute" component={BusRoute}/>
-        </Switch>
-    </BrowserRouter>
+    <StoreProvider>
+      <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/login" component={Login}/>
+            <Route path="/busRoute" component={BusRoute}/>
+          </Switch>
+      </BrowserRouter>
+    </StoreProvider>
   );
 }
 

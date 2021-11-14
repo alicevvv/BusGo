@@ -211,7 +211,7 @@ code {
 
 .badge {
     color: var(--white);
-    background-color: var(--deep-gray);
+    
     padding: 9px 16px;
     margin-bottom: 16px;
     border-radius: 30px;

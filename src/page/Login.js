@@ -22,8 +22,8 @@ export default function Login() {
                             <img src="./img/member_banner.svg" style={{width:'100%',height:'calc(100vh - 64px)',objectFit:'cover'}}/>
                         </div>
                     </Col>
-                    <Col span={4} className="bg-light"></Col>
-                    <Col span={4} className="bg-light" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                    <Col span={3} className="bg-light"></Col>
+                    <Col span={6} className="bg-light" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
                         <img src="./img/logo.svg" style={{marginBottom:'1em'}}/>
                         <span className="loginInputs">
                             <Input placeholder="帳號 / username" style={{width:'100%'}}/>
@@ -39,7 +39,7 @@ export default function Login() {
                             </Button>
                         </Link>
                     </Col>
-                    <Col span={4} className="bg-light"></Col>
+                    <Col span={3} className="bg-light"></Col>
                 </Row>
             </Content>
         </Layout>

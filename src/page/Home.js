@@ -1,7 +1,9 @@
 import {Layout, Row, Col,Input,Space, Typography, List, Avatar, Divider,Button} from 'antd';
+import {useContext} from "react";
 import AppHeader from '../component/header';
 import AppFooter from '../component/footer';
 import news from '../json/news.json';
+import {StoreContext} from '../store';
 const {Header, Content, Footer} = Layout;
 const { Search } = Input;
 const { Title } = Typography;
@@ -13,6 +15,8 @@ const onSearch = value =>
 }
 
 export default function Home() {
+    const { state:{ count }} = useContext(StoreContext);
+
     return (
         <Layout>
             <Header>
@@ -27,7 +31,7 @@ export default function Home() {
                         <div style={{marginTop:'60px'}}>
                             <img src="./img/bus_loading.svg"></img>
                         </div>
-                        <div style={{fontSize:'16px',marginTop:'40px'}}>已收藏 0 個站牌</div>
+                        <div style={{fontSize:'16px',marginTop:'40px'}}>{`已收藏 ${count} 個站牌`}</div>
                     </Col>
                     <Col span={3} className="bg-white"></Col>
                     <Col span={2} className="bg-light"></Col>
