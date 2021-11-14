@@ -204,3 +204,26 @@ code {
     padding:9px 16px;
     margin-bottom: 16px;
 }
+/* Button */
+
+.add{
+    margin-top: 20px;
+    background-color :black;
+    color: white;
+    border: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+}
+
+/* Header Button */
+
+.header-button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button {
+    color: white;
+    margin-left: 12px;
+}

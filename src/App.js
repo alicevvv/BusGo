@@ -10,9 +10,9 @@ function App() {
   return (
     <BrowserRouter>
         <Switch>
-          <Route path="/home" component={Home}/>
+          <Route exact path="/home" component={Home}/>
           <Route path="/login" component={Login}/>
-          <Route exact path="/" component={BusRoute}/>
+          <Route path="/busRoute" component={BusRoute}/>
         </Switch>
     </BrowserRouter>
   );

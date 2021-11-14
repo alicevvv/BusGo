@@ -12,6 +12,9 @@ export default function Home() {
         <Layout>
             <Header>
                 <AppHeader/>
+                <Row className="text-white">
+                <h1>Bus Go!</h1>
+                </Row>
             </Header>
             <Content>
                 <Row className="height-80">
