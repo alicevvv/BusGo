@@ -3,6 +3,8 @@ import AppHeader from '../component/header';
 import AppFooter from '../component/footer';
 import BusTime from '../component/BusTime';
 import BusStation from '../component/BusStation';
+import BusLike from '../component/BusLike';
+import BusStatus from '../component/BusStatus';
 const {Header, Content, Footer} = Layout;
 const { Search } = Input;
 const { Title } = Typography;
@@ -14,7 +16,7 @@ export default function BusRoute() {
                 <AppHeader/>
             </Header>
             <Content>
-                <Row className="height-80">
+                <Row className="contain-minheight">
                     <Col span={3} className="bg-white"></Col>
                     <Col span={6} className="bg-white" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
                             <Divider orientation="left">搜尋公車路線</Divider>
@@ -32,7 +34,9 @@ export default function BusRoute() {
                     <Col span={2} className="bg-light"></Col>
                     <Col span={8} className="bg-light" style={{display:'flex',flexDirection:'column'}}>
                         <div class="font-normal" style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:'60px'}} >
-                            <span className="font-normal" style={{fontSize:'24px'}}>932路線</span>
+                            <span className="font-normal" style={{fontSize:'24px'}}>932路線
+                                <div style={{fontSize:'16px'}}>已收藏 3 個站牌</div>
+                            </span>
                             <Radio.Group name="directionRadioGroup" defaultValue={0}>
                                 <Space direction="vertical">
                                     <Radio value={0}>往三峽北大社區</Radio>
@@ -40,9 +44,11 @@ export default function BusRoute() {
                                 </Space>
                             </Radio.Group>
                         </div>
-                        <div style={{marginTop:'40px',display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'baseline'}}>
+                        <div style={{marginTop:'40px',display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'baseline',maxHeight:'50vh',overflow:'scroll'}}>
                             <BusTime/>
                             <BusStation/>
+                            <BusLike/>
+                            <BusStatus/>
                         </div>
                     </Col>
                     <Col span={2} className="bg-light"></Col>

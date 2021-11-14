@@ -1,19 +1,15 @@
 import {Row, Col} from 'antd';
 import timedata from '../json/timedata.json'
-function isComing(timing){
-    
-}
 
 
-export default function BusTime(){
+export default function BusStatus(){
     return(
-        <div className="px-1">
+        <div>
             {timedata.map(busTime =>(
                 <div
-                key={busTime.title}
-                className="badge"
+                className=""
                 >
-                    {busTime.title}
+                    
                 </div>
             ))}
         </div>

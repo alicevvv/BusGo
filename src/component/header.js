@@ -27,11 +27,11 @@ export default function AppHeader(){
                  <NavLink to="/Contact Us" activeStyle>
                      路線規劃
                  </NavLink>
-                 <NavLink to="/Sing Up" activeStyle>
+                 <NavLink to="/" activeStyle>
                      乘客服務
                  </NavLink>
                  <NavBtn>
-               <NavBtnLink to="/singin"> 會員登入</NavBtnLink>  
+               <NavBtnLink to="/login"> 會員登入</NavBtnLink>  
              </NavBtn>
              </NavMenu>
            

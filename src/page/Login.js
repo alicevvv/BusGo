@@ -16,9 +16,11 @@ export default function Login() {
                 <AppHeader/>
             </Header>
             <Content>
-                <Row className="height-80">
+                <Row>
                     <Col span={12} className="bg-white">
-                        
+                        <div style={{width:'100%',height:'calc(100vh - 64px)',objectFit:'cover'}}>
+                            <img src="./img/member_banner.svg" style={{width:'100%',height:'calc(100vh - 64px)',objectFit:'cover'}}/>
+                        </div>
                     </Col>
                     <Col span={4} className="bg-light"></Col>
                     <Col span={4} className="bg-light" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
@@ -31,7 +33,7 @@ export default function Login() {
                             <Checkbox className="font-normal">記住我 Remember me </Checkbox>
                             <Button type="text" style={{fontWeight:'bold'}}>忘記密碼?</Button>
                         </div>
-                        <Link to={`/home`} style={{width:'100%'}}>
+                        <Link to={`/`} style={{width:'100%'}}>
                             <Button className="btn-main hover-border" style={{width:'100%',height:'60px',marginTop:'1rem'}}>
                                 <span className="font-normal">登入會員</span>
                             </Button>
@@ -40,9 +42,6 @@ export default function Login() {
                     <Col span={4} className="bg-light"></Col>
                 </Row>
             </Content>
-            <Footer>
-                <AppFooter/>
-            </Footer>
         </Layout>
     );
 }
