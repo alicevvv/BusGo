@@ -1,0 +1,35 @@
+[
+    {
+        "title":"未發車",
+        "station":"姑娘廟"
+    },
+    {
+        "title":"未發車",
+        "station":"大義路口"
+    },
+    {
+        "title":"未發車",
+        "station":"學成大雅路口"
+    },{
+        "title":"進站中",
+        "station":"學成大成路口"
+    },{
+        "title":"約2分",
+        "station":"南園"
+    },{
+        "title":"約3分",
+        "station":"北美館社區"
+    },{
+        "title":"約3分",
+        "station":"桃子腳國中小"
+    },{
+        "title":"約4分",
+        "station":"森林公園"
+    },{
+        "title":"約6分",
+        "station":"大學風呂"
+    },{
+        "title":"約6分",
+        "station":"海洋公園"
+    }
+]
